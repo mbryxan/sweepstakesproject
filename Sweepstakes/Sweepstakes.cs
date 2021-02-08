@@ -13,6 +13,8 @@ namespace Sweepstakes
         private string name;
         public string Name;
 
+       
+
         //constructor
         public Sweepstakes(string name)
         {
@@ -27,6 +29,13 @@ namespace Sweepstakes
             // Use the contestant's registration number as the key for the dictionary entry
             // Use the contestant object itself as the value for the dictionary entry
 
+            Dictionary<int, Contestant>.Add( );
+            
+
+            
+            
+            
+            
         }
        
         public void PrintContestantinfo(Contestant contestant)
@@ -35,15 +44,14 @@ namespace Sweepstakes
             // Print out all of the conctestant's information using Console.WriteLines
 
             Console.WriteLine("First Name: " + contestant.FirstName);
-            Console.WriteLine("First Name: " + contestant.LastName);
-            Console.WriteLine("First Name: " + contestant.EmailAddress);
-            Console.WriteLine("First Name: " + contestant.RegistrationNunmber);
-            
+            Console.WriteLine("Last Name: " + contestant.LastName);
+            Console.WriteLine("Email Address: " + contestant.EmailAddress);
+            Console.WriteLine("Registration Number: " + contestant.RegistrationNunmber);
+        }
+        public void ContestantPickWinner()
+        {
 
         }
-
-
-
 
 
     }
