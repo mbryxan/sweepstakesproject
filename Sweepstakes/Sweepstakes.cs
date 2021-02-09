@@ -44,7 +44,6 @@ namespace Sweepstakes
             // Find a way to select a random contestant from the contestants dictionary
             // Return that constant we grabbed from the dictionary
 
-
             Random random = new Random();
             return contestants[random.Next(contestants.Count)];
            
