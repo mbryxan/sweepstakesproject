@@ -11,7 +11,11 @@ namespace Sweepstakes
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
-        public int RegistrationNunmber { get; set; }
+        public int RegistrationNumber { get; set; }
+
+        // Create a constructor
+        // Inisde the constructor, set the FirstName, LastName, and EmailAddress properties equal to user input
+        // Use methods on the static UserInterface class to get the user input
 
     }
 }
