@@ -14,8 +14,15 @@ namespace Sweepstakes
         public int RegistrationNumber { get; set; }
 
         // Create a constructor
-        // Inisde the constructor, set the FirstName, LastName, and EmailAddress properties equal to user input
-        // Use methods on the static UserInterface class to get the user input
+        public Contestant()
+        {
+            FirstName = UserInterface.SetFirstName();
+            LastName = UserInterface.SetLastName();
+            EmailAddress = UserInterface.SetEmailAddress();
+            RegistrationNumber = UserInterface.SetRegistrationNumber();
 
+            // Inside the constructor, set the FirstName, LastName, and EmailAddress properties equal to user input
+            // Use methods on the static UserInterface class to get the user input
+        }
     }
 }
